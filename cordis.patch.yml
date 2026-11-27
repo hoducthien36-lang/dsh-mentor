@@ -1,0 +1,10 @@
+# dsh-mentor 的 DSH 接入声明。
+#
+# 只做一件事：把本插件插入宿主 profile。
+# 所有配置项默认值在 lib/index.js 里计算，这里不硬编码。
+#
+# 注意：loader 的 specifier 必须与本包 package.json 的 name 完全一致，
+# 否则宿主按 nearest-manifest-name 做匹配时会认不出来。
+- insert:
+    - id: mentor
+      name: "dsh-mentor"

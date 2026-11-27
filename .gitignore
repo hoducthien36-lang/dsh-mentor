@@ -1,0 +1,21 @@
+# Dependencies & runtime state (NEVER commit user task data or local caches)
+node_modules/
+data/
+.mentor-worktrees/
+
+# Local tooling, verification & scratch outputs
+.graphflow/
+.graphflow-cache/
+graphflow-out/
+.round2-verification/
+verification/
+selfcheck-result.json
+BUGREPORT.md
+TEST-SYNC-TODO.md
+
+# OS / Editor / Logs
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

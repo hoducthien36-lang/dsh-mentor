@@ -1,0 +1,53 @@
+{
+  "name": "dsh-mentor",
+  "version": "1.0.0",
+  "description": "Clean-room DSH task supervision plugin: plan DAG validation, stage review, remediation loop. Independent implementation, not derived from any unlicensed source.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/",
+    "src/",
+    "cordis.patch.yml",
+    "SPEC.md",
+    "CLEANROOM.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.1.2-rc.1"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": ">=0.1.2-rc.1"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-tools": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test --test-force-exit test/",
+    "check": "node --check lib/client.js && node --check lib/hot-ui.js && node --check lib/index.js && node --check src/plan/dag.js && node --check src/review/review.js && node --check src/rpc/state.js && node --check src/state/machine.js && node --check src/tools/handlers.js && node --check src/errors.js && node --check src/persist/store.js"
+  }
+}
