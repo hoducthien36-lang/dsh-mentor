@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "title": {
+    "en": "dsh-mentor Plugin Index",
+    "zh-cn": "dsh-mentor 插件索引"
+  },
+  "description": {
+    "en": "Official plugin index for dsh-mentor (clean-room task supervision & Apple-style Mind-Map UI for DeepSeek Harness).",
+    "zh-cn": "dsh-mentor 官方插件索引源（面向 DeepSeek Harness 的洁净室任务督导与苹果风思维导图插件）。"
+  },
+  "metadata": {
+    "categories": {
+      "workflow": {
+        "title": {
+          "en": "Workflow & Supervision",
+          "zh-cn": "工作流与任务督导"
+        }
+      }
+    },
+    "labels": {
+      "cleanroom": {
+        "title": {
+          "en": "Zero-Dep Clean-Room",
+          "zh-cn": "零依赖洁净室"
+        }
+      },
+      "mindmap": {
+        "title": {
+          "en": "Mind-Map UI",
+          "zh-cn": "思维导图界面"
+        }
+      }
+    },
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "dsh-mentor",
+      "title": {
+        "en": "Mentor — Task Supervision & Mind-Map UI",
+        "zh-cn": "导师模式（Mentor）· 思维导图任务督导"
+      },
+      "description": {
+        "en": "Clean-room, zero-dependency task supervision & independent verification plugin for DeepSeek Harness with an Apple-style interactive Mind-Map UI, DAG plan review, real diff audit, mutation testing, and Git Worktree isolation.",
+        "zh-cn": "面向 DeepSeek Harness 的洁净室、零外部依赖任务督导与独立审查插件：内置苹果风交互式思维导图面板、DAG 计划审查、前置硬检查、真实 Diff 审计、变异测试防空洞、卡死熔断与 Git Worktree 物理隔离。"
+      },
+      "icon": "./icon.svg",
+      "author": "hoducthien36-lang",
+      "homepage": "https://github.com/hoducthien36-lang/dsh-mentor#readme",
+      "repository": {
+        "url": "https://github.com/hoducthien36-lang/dsh-mentor"
+      },
+      "metadata": {
+        "category": "workflow",
+        "keywords": [
+          "dsh-plugin",
+          "deepseek-harness",
+          "mentor",
+          "mind-map",
+          "verification",
+          "code-review",
+          "dag",
+          "worktree"
+        ],
+        "labels": [
+          "cleanroom",
+          "mindmap"
+        ],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1795769535,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/hoducthien36-lang/dsh-mentor.git",
+            "commit": "0495151782903f7c80799c391d6c4c3a16a899b9"
+          },
+          "engines": {
+            "dsh": ">=0.1.2-rc.1"
+          }
+        }
+      ]
+    }
+  ]
+}
