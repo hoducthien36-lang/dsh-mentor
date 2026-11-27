@@ -1,7 +1,25 @@
 {
   "name": "dsh-mentor",
   "version": "1.0.0",
-  "description": "Clean-room DSH task supervision plugin: plan DAG validation, stage review, remediation loop. Independent implementation, not derived from any unlicensed source.",
+  "description": "Clean-room DSH task supervision plugin: DAG plan review, independent verification, real diff audit, mutation testing, and an Apple-style interactive Mind-Map UI.",
+  "icon": "./icon.svg",
+  "author": "hoducthien36-lang",
+  "homepage": "https://github.com/hoducthien36-lang/dsh-mentor#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hoducthien36-lang/dsh-mentor.git"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "mentor",
+    "task-supervision",
+    "mind-map",
+    "verification",
+    "code-review",
+    "dag",
+    "worktree"
+  ],
   "type": "module",
   "main": "./lib/index.js",
   "exports": {
@@ -10,11 +28,14 @@
     "./package.json": "./package.json"
   },
   "files": [
+    "icon.svg",
     "lib/",
     "src/",
+    "docs/",
     "cordis.patch.yml",
     "SPEC.md",
     "CLEANROOM.md",
+    "CHANGELOG.md",
     "README.md",
     "LICENSE"
   ],

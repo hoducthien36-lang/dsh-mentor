@@ -4,8 +4,6 @@
 >
 > 面向 DeepSeek Harness 的洁净室、零外部依赖任务督导与独立审查插件 —— 为复杂 AI 编程任务提供 DAG 计划审查、前置硬检查、真实 Diff 审计、变异测试防空洞、独立只读审查、卡死熔断与苹果风交互式思维导图面板。
 
-![dsh-mentor Apple-style Mind-Map UI](docs/assets/mindmap-ui.png)
-
 ---
 
 ## 界面演示（真机实拍）
@@ -47,6 +45,22 @@
 ---
 
 ## 快速安装与启用（DeepSeek Harness）
+
+### 方式一：通过 DSH 插件市场索引源安装（推荐）
+在 DeepSeek Harness 中打开 **插件 → 发现 → 添加自定义索引源**，粘贴本仓库提供的 Format 1 市场索引地址即可浏览并一键安装：
+
+```text
+https://raw.githubusercontent.com/hoducthien36-lang/dsh-mentor/main/market-index.json
+```
+
+### 方式二：在 DSH 插件管理器中直接通过 GitHub 地址安装
+在 DeepSeek Harness **插件 → 安装** 中直接输入仓库地址：
+
+```text
+https://github.com/hoducthien36-lang/dsh-mentor
+```
+
+### 方式三：本地克隆并按 Profile 挂载
 
 1. 克隆本仓库到本地任意目录（例如 `<path>/dsh-mentor`）：
 

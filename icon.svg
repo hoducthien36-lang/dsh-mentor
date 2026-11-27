@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="12" y1="8" x2="116" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A84FF"/>
+      <stop offset="55%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#4338CA"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="64" y1="0" x2="64" y2="72" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Apple squircle tile -->
+  <rect x="6" y="6" width="116" height="116" rx="28" fill="url(#bg)"/>
+  <rect x="6.75" y="6.75" width="114.5" height="114.5" rx="27.25" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="1.5"/>
+  <rect x="8" y="8" width="112" height="58" rx="26" fill="url(#shine)"/>
+
+  <!-- Organic Mind-Map Bézier branches -->
+  <path d="M40 64 C56 64, 56 38, 76 38" stroke="#FFFFFF" stroke-opacity="0.92" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M40 64 C56 64, 56 64, 76 64" stroke="#60EFFF" stroke-opacity="0.95" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M40 64 C56 64, 56 90, 76 90" stroke="#FFFFFF" stroke-opacity="0.92" stroke-width="4.5" stroke-linecap="round"/>
+
+  <!-- Root node -->
+  <rect x="20" y="50" width="24" height="28" rx="9" fill="#FFFFFF"/>
+  <circle cx="32" cy="64" r="4.5" fill="#2563EB"/>
+
+  <!-- Branch nodes (Apple green verified, sky active, amber review) -->
+  <rect x="74" y="28" width="32" height="20" rx="10" fill="#FFFFFF" fill-opacity="0.96"/>
+  <circle cx="84" cy="38" r="4.2" fill="#30D158"/>
+  <rect x="92" y="36" width="9" height="4" rx="2" fill="#1E293B" fill-opacity="0.45"/>
+
+  <rect x="74" y="54" width="32" height="20" rx="10" fill="#FFFFFF" fill-opacity="0.96"/>
+  <circle cx="84" cy="64" r="4.2" fill="#0A84FF"/>
+  <rect x="92" y="62" width="9" height="4" rx="2" fill="#1E293B" fill-opacity="0.45"/>
+
+  <rect x="74" y="80" width="32" height="20" rx="10" fill="#FFFFFF" fill-opacity="0.96"/>
+  <circle cx="84" cy="90" r="4.2" fill="#FF9F0A"/>
+  <rect x="92" y="88" width="9" height="4" rx="2" fill="#1E293B" fill-opacity="0.45"/>
+</svg>
